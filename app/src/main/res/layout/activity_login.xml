@@ -6,9 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
 
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/bar_layout" />
     <TextView
         android:id="@+id/createTV"
         android:textSize="30dp"
+        android:layout_below="@+id/toolbar"
         android:paddingVertical="20dp"
         android:layout_centerHorizontal="true"
         android:text="Enter Credentials"

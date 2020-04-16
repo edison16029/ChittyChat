@@ -29,6 +29,11 @@ public class LoginActivity extends AppCompatActivity {
         login = (Button) findViewById(R.id.login);
         auth = FirebaseAuth.getInstance();
 
+        android.support.v7.widget.Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Login");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
