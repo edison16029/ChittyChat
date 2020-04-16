@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "768725311730",
+    "firebase_url": "https://chittychat-20c31.firebaseio.com",
+    "project_id": "chittychat-20c31",
+    "storage_bucket": "chittychat-20c31.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:768725311730:android:8e4baf25219c10e086706b",
+        "android_client_info": {
+          "package_name": "com.example.edison.chittychat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "768725311730-02hpbvuf65i4ulbc5npe18nov03srk9l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.edison.chittychat",
+            "certificate_hash": "18909677d7d2cd17f1bf1310975a8b9b6626f18c"
+          }
+        },
+        {
+          "client_id": "768725311730-ffb20l2be9bmirkgafr1oqhhi5hcb8su.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCy5Jt04-MnS_rcTLh9H15ctUwuZ7YCyEM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "768725311730-ffb20l2be9bmirkgafr1oqhhi5hcb8su.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
