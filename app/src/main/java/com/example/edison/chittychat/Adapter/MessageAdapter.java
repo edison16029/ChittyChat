@@ -1,6 +1,7 @@
 package com.example.edison.chittychat.Adapter;
 
 import android.content.Context;
+import android.opengl.Visibility;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -52,6 +53,7 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.ViewHold
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Chat chat = mChat.get(position);
 
+
         holder.show_message.setText(chat.getMessage());
         if(imageURL.equals("default")){
             holder.profile_image.setImageResource(R.mipmap.ic_launcher);
@@ -59,6 +61,19 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.ViewHold
         else{
             Glide.with(mContext).load(imageURL).into(holder.profile_image);
         }
+
+        if(position == mChat.size()-1){
+            if(chat.getIsseen()){
+                holder.text_seen.setText("seen");
+            }
+            else{
+                holder.text_seen.setText("delivered");
+            }
+        }
+        else{
+            holder.text_seen.setVisibility(View.GONE);
+        }
+
 
     }
 
@@ -71,11 +86,15 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.ViewHold
         public TextView show_message;
         public CircleImageView profile_image;
 
+        public TextView text_seen;
+
         private ViewHolder(View itemView){
             super(itemView);
 
             show_message = itemView.findViewById(R.id.show_message);
             profile_image = itemView.findViewById(R.id.profile_image);
+            text_seen = itemView.findViewById(R.id.text_seen);
+
         }
     }
 
