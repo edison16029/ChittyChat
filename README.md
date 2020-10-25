@@ -1,5 +1,5 @@
 # ChittyChat
-A Chat Application using Firebase Database
+A Chat Application using Firebase Database developed with Android (Java).
 
 This application is developed as a practice based on a Youtube Tutorial.
 Link : https://www.youtube.com/playlist?list=PLzLFqCABnRQftQQETzoVMuteXzNiXmnj8
